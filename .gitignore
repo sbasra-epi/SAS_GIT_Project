@@ -348,3 +348,21 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+
+# Ignore Word Docx files
+*.docx
+# Ignore Excel XLSX files
+*.xlsx
+# Ignore Powerpoint PPTX files
+*.pptx
+# Ignore SAS Enterprise Guide Project files
+*.egp
+# Ignore log files
+*.log
+# Ignore Web page files
+*.html
+# Ignore the Temporary Folder
+/Temporary
+# Ignore the .vscode Folder
+/.vscode
