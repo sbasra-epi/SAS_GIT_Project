@@ -16,13 +16,8 @@ title 'The First Five Observations Out of 100,000';
 proc print data=sashelp.BirthWgt (obs=5);
 run;
 
-
 proc freq data=sashelp.BirthWgt;
-tables race / list missing;
-run;
-
-proc freq data=sashelp.BirthWgt;
-tables agegroup / list missing;
+tables death*smoking / nocol norow missing;
 run;
 
 *Explore details of infant deaths in 2003 to get background characters of mom within the year.
