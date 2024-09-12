@@ -17,4 +17,18 @@ proc print data=sashelp.BirthWgt (obs=5);
 run;
 
 
-*Explore details of infant deaths in 2003 to get background characters of mom within the year.
+*Explore details of infant deaths in 2003 to get background characters of mom within the year.;
+
+proc freq data=sashelp.BirthWgt;
+	table SomeCollege*race*Married;
+run;
+
+proc means data=sashelp.birthwgt;
+	var AgeGroup;
+run;
+
+*This is comment;
+
+proc freq data=sashelp.BirthWgt;
+	table Drinking;
+run;
