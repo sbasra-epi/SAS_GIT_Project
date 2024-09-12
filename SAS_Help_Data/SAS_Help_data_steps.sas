@@ -28,3 +28,7 @@ proc means data=sashelp.birthwgt;
 run;
 
 *This is comment;
+
+proc freq data=sashelp.BirthWgt;
+	table Drinking;
+run;
