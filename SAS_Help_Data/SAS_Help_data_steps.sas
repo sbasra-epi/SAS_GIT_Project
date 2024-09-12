@@ -11,14 +11,20 @@ title '2003 Birth Weight Data';
 proc contents data=sashelp.BirthWgt varnum;
    ods select position;
 run;
+title;
 
 title 'The First Five Observations Out of 100,000';
 proc print data=sashelp.BirthWgt (obs=5);
 run;
+title;
 
+title 'Death Frequencies: Smoking and Drinking';
 proc freq data=sashelp.BirthWgt;
 table death*smoking /nocol norow missing;
+table death*drinking /nocol norow missing;
+table death*smoking*drinking /nocol norow missing;
 ;
 run;
+title;
 
 *Explore details of infant deaths in 2003 to get background characters of mom within the year.
